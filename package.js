@@ -1,5 +1,5 @@
 Package.describe({
-    name: 'universe:api-debugging-tool',
+    name: 'universe:api-debugger',
     summary: 'Debugging tool for API.',
     version: '1.0.0',
     readme: 'README.md'

@@ -20,7 +20,7 @@ export const DebuggingTool = {
 
         if (isDeleteAll) {
             for (i = 0; i < listOfFiles.length; i++) {
-                if (!_.contains(filesToDelOrOmit, listOfFiles[i])) {
+                if (!_.includes(filesToDelOrOmit, listOfFiles[i])) {
                     fs.unlinkSync(path.join(API_INVESTIGATOR_PATH, listOfFiles[i]));
                 }
             }
@@ -49,14 +49,13 @@ export const DebuggingTool = {
             }
         );
     },
-    apiGetResponseText: function (args) {
+    apiGetResponseText: function (toFileData) {
         // this method accepts all arguments of procedure callback as array
-        if (!args) {
+        if (!toFileData) {
             return '';
         }
-        return Array.prototype.map.call(args, (item, i) => {
-            return `<<<<<PARAMETER ${i}>>>>>\n\n${JSON.stringify(item, null, 5)}\n\n`;
-        }) || '';
+
+        return `<<<<<PARAMETER>>>>>\n\n${JSON.stringify(toFileData, null, 5)}\n\n`;
     },
     _createFile: function (fileNumber, fileExtension = '.txt', fileName = 'soap_rpc') {
         if (!fs.existsSync(API_INVESTIGATOR_PATH)) {

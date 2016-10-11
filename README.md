@@ -37,7 +37,7 @@ This method is responsible for deleting files inside your debugging folder. You 
 if isDeleteAll === true then filesToDelOrOmit is array of files names which you don't want to delete
 if isDeleteAll === false then filesToDelOrOmit is array of files names which you WANT to delete
 
-### Example useage:
+### Example usage:
 
 ```js
 DebuggingTool.deleteFilesFromFolder({

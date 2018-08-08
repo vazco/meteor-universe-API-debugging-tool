@@ -1,8 +1,14 @@
-## Abandonware
+<h1 align="center">
+    <a href="https://github.com/vazco">vazco</a>/Universe API Debugger
+</h1>
 
-<a href="http://unicms.io"><img src="http://unicms.io/banners/standalone.png" /></a>
+&nbsp;
 
-# Universe API debugger
+<h3 align="center">
+  -- Abandonware. This package is deprecated! --
+</h3>
+
+&nbsp;
 
 Universe API debugger logs any content you want to file, which you can later easily inspect.
 
@@ -53,3 +59,9 @@ DebuggingTool.initReportCreation(
     'apiResponseFileName'
 );
 ```
+
+### License
+
+<img src="https://vazco.eu/banner.png" align="right">
+
+**Like every package maintained by [Vazco](https://vazco.eu/), Universe API Debugger is [MIT licensed](https://github.com/vazco/uniforms/blob/master/LICENSE).**
